@@ -1,3 +1,5 @@
-a=10
-if(a):
-    print("lmao")
+def b():
+    print("In b")
+    a()
+def a():
+    print("In a ")
