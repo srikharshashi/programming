@@ -5,6 +5,20 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Launch pratice",
+            "request": "launch",
+            "mainClass": "pratice",
+            "projectName": "programming_407d3d09"
+        },
+        {
+            "type": "java",
+            "name": "Launch csort",
+            "request": "launch",
+            "mainClass": "csort",
+            "projectName": "programming_407d3d09"
+        },
+        {
             "name": "gcc.exe - Build and debug active file",
             "type": "cppdbg",
             "request": "launch",

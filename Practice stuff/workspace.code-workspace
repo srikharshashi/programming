@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"java.project.sourcePaths": [
+			"Solutions/Counting Sort",
+			"Practice stuff"
+		]
+	}
+}

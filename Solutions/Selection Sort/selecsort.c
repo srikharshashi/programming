@@ -23,6 +23,7 @@ void main()
     scanf("%d",&arr[i]);
     }
     int minin,temp;
+
     for(i=0;i<len-1;i++)
     {
         minin=findmin(i,arr,len);
