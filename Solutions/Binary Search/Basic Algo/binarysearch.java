@@ -23,7 +23,7 @@ public class binarysearch
     {
         int l=0;
         int r=arr.length-1;
-        int mid;
+        int mid= -1;
         while(l<=r)
         {  
             mid=(l+r)/2;
@@ -34,7 +34,7 @@ public class binarysearch
             else if(target>arr[mid])
             l=mid+1;
         }
-        return -1;
+       return mid;
     }
 
   

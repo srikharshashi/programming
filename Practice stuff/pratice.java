@@ -1,23 +1,49 @@
-public class pratice
- {
+import java.util.ArrayList;
+import java.util.Scanner;
 
-    public static void main(String[] args)
+class practice 
+{
+    public static void main(String[] args) 
     {
-        int nums[]={0,1,2,2,3,3,3};
-        int first_index=0;int val=nums[0];
-        for(int i=1;i<nums.length;i++)
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the number of rows");
+        int n=sc.nextInt();
+        System.out.println("Enter the number of colums");
+        int m=sc.nextInt();
+        int matrix[][]=new int[n][m];
+        int transpose[][]=new int[m][n];
+        System.out.println("Enter the elements");
+        for(int i=0;i<n;i++)
         {
-            if(val!=nums[i])
-            {
-                nums[first_index]=val;
-                 first_index++;
-                  val=nums[i];
-            }
+            for(int j=0;j<n;j++)
+            matrix[i][j]=sc.nextInt();
         }
-        for(int i=0;i<nums.length;i++)
+        for(int i=0;i<n;i++)
         {
-            System.out.println(nums[i]);
+            for(int j=0;j<m;j++)
+           transpose[j][i] = matrix[i][j];
+        }
+        ArrayList<Integer> arr=new ArrayList<>()
+        for(int i=0;i<n;i++)
+        {
+            for(int j=0;j<m;j++)
+            System.out.print(transpose[i][j]);
+            System.out.println();
         }
     }
-    
+    // public int[][] transpose(int[][] matrix) 
+    // {
+    //     int n=matrix.length;//rows
+    //     int m=matrix[0].length;//column
+        
+        
+    //     for(int i=0;i<m;i++)
+    //     {
+    //         for (int j=0;j<n;j++)
+    //         {
+    //             matrix[j][i]=transpose[i][j];
+    //         }
+    //     }
+    //     return transpose; 
+    // }
 }
