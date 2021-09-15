@@ -1,10 +1,13 @@
 #include <stdio.h>
-#include<limits.h>
-#include <strings.h>
-void main()
+int main()
 {
-    int a=50;
-    int *aptr;
-    aptr=&a;
-    printf("%d",aptr);
+    int a=20;
+    int b=10;
+    int c=15;
+    int d=5;
+    printf("%d",a+(b*c)/d);
+
+
+
+    return 0;
 }

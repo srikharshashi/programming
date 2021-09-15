@@ -4,6 +4,7 @@ public class binarysearchrev
 {
     public static void main(String[] args)
     {
+        // Binary Search for Reverse Sorted Arrays
         binarysearchrev ob=new binarysearchrev();
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the length of array");

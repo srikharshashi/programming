@@ -1,5 +1,10 @@
 {
     "files.associations": {
         "stdio.h": "c"
-    }
+    },
+    "C_Cpp.errorSquiggles": "Disabled",
+    "python.analysis.extraPaths": [
+        "./alexa/skill_env"
+    ],
+    "liveServer.settings.multiRootWorkspaceName": "programming"
 }

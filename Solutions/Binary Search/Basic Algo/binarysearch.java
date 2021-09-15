@@ -16,7 +16,7 @@ public class binarysearch
         }
         System.out.println("Emter Target");
         int target=sc.nextInt();
-        int index =ob.binserch(arr, target);
+        int index =ob.binarysearchindex(arr, target);
         System.out.println("Target found at "+index);
     }
     int binserch(int arr[],int target)
@@ -36,6 +36,47 @@ public class binarysearch
         }
        return mid;
     }
+    int binarysearchlastindex(int arr[],int target)
+    {
+        //To find last occurence return r
+        
+        int l=0;
+        int r=arr.length-1;
+        int mid= -1;
+        while(l<=r)
+        {  
+            mid=(l+r)/2;
+            if(arr[mid]==target)
+            l=mid+1;
+            else if(target<arr[mid])
+            r=mid-1;
+            else if(target>arr[mid])
+            l=mid+1;
+        }
+       return mid;
+    
+    }
+    int binarysearchindex(int arr[],int target)
+    {
+        //This method is used to serach for the target's position if and only if it is not in the array
+        
+        int l=0;
+        int r=arr.length-1;
+        int mid= -1;
+        while(l<=r)
+        {  
+            mid=(l+r)/2;
+            if(arr[mid]==target)
+            ;
+            else if(target<arr[mid])
+            r=mid-1;
+            else if(target>arr[mid])
+            l=mid+1;
+        }
+       return l;
+    
+    }
+
 
   
 }

@@ -1,0 +1,21 @@
+ while(bool==1)
+    {
+        int twox=2*x;
+        if(twox<100)
+        {
+           arr[c]=twox ;
+          
+        }
+        else if(twox>=100)
+        {
+            arr[c]=twox-100;
+            
+        }
+        if(arr[0]==arr[c])
+        {
+            printf("It is a good number");
+            break;
+        }
+
+        ++c;
+    }
