@@ -1,4 +1,4 @@
-import java.util.Scanner;
+    import java.util.Scanner;
 
 public class binarysearch 
 {
@@ -26,7 +26,7 @@ public class binarysearch
         int mid= -1;
         while(l<=r)
         {  
-            mid=(l+r)/2;
+            mid=(l+r)/2;  //
             if(arr[mid]==target)
             return mid;
             else if(target<arr[mid])

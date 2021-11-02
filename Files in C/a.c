@@ -14,8 +14,9 @@ void main() {
     // fputc('o',ptr);
     // fputs("oof lmao",ptr);
 
-    FILE *ptr=fopen("main.txt","a"); //open the file in r+ mode
-    fputs(" lmaooooooo",ptr);
+    FILE *ptr=fopen("main.txt","r"); //open the file in r+ mode
+    
+    
 
 
 
