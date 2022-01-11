@@ -4,7 +4,7 @@
 public class subsequences 
 {
     public static void main(String[] args) {
-        getsubseq("", "abcde");
+        getsubseq("", "abc");
       
     }
     public static void getsubseq(String p, String up) {

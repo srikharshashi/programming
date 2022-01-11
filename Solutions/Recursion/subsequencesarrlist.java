@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 public class subsequencesarrlist {
     public static void main(String[] args) {
-        ArrayList<String> arr=getsubseq("", "abcde" );
+        ArrayList<String> arr=getsubseq("", "abcc" );
         for (String str : arr) {
             System.out.println(str);
 

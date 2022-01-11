@@ -1,0 +1,38 @@
+.parent
+{
+    height: 900px;
+    flex-direction: column;
+    display: flex;
+    border: 2px solid red;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.one
+{
+    height: 300px;
+    width: 600px;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.two
+{
+    display: flex;
+    height: 200px;
+    width:400px;
+    background-color: aqua;
+    align-items: center;
+    justify-content: center;
+
+}
+.three
+{
+    height: 100px;
+    width: 200px;
+    background-color: aquamarine;
+}

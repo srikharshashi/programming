@@ -1,5 +1,11 @@
 class main{
     public static void main(String[] args) {
-        LL list=new LL();
+        System.out.println("Lmao");
     }
 }
+class  A
+{
+
+}
+class B
+{}
