@@ -7,6 +7,7 @@ struct Node
     int exp;
     struct Node *next;
 };
+
 void display(struct Node *h)
 {
     struct Node *temp = h;
@@ -23,6 +24,7 @@ void display(struct Node *h)
         temp = temp->next;
     }
 }
+
 struct Node *addnode(int exp, int coeff, struct Node *h)
 {
     struct Node *newnode = (struct Node *)(malloc(sizeof(struct Node)));
@@ -40,6 +42,7 @@ struct Node *addnode(int exp, int coeff, struct Node *h)
     }
     return h;
 }
+
 struct Node* reverse(struct Node *h)
 {
     struct Node *temp = NULL;
@@ -50,7 +53,9 @@ struct Node* reverse(struct Node *h)
     }
     return temp;
 }
-struct Node *addquad(struct Node *HEAD1, struct Node *HEAD2)
+
+
+struct Node* addquad(struct Node *HEAD1, struct Node *HEAD2)
 {
     struct Node *ptr3 = NULL;
     while (HEAD1 != NULL && HEAD2 != NULL)

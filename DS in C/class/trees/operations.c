@@ -21,11 +21,45 @@ void inorder(struct Node* ROOT)
         inorder(ROOT->left);
         printf("%d ",ROOT->data);
         inorder(ROOT->right);
-
     }
     else
       return;
     
+}
+struct Node* getmin(struct Node* ROOT)
+{
+    if(ROOT->right==NULL)
+        return ROOT;
+    else 
+        return getmin(ROOT->right);
+}
+struct Node* delete(struct Node* ROOT,int value)
+{
+   if(ROOT==NULL)
+        return ROOT;
+    
+    else if(ROOT->data<value)
+        ROOT->right=delete(ROOT->right,value);
+    
+    else if(ROOT->data>value)
+        ROOT->left=delete(ROOT->left,value);  
+
+    else //if its the root value
+    {
+        if(ROOT->left==NULL)
+            return ROOT->right;
+        else if(ROOT->right==NULL)
+            return ROOT->left;
+    
+
+        struct Node* min=getmin(ROOT->left);
+        int temp=min->data;
+        delete(ROOT,min->data);
+        ROOT->data=temp;
+    }
+    return ROOT;
+    
+
 }
 void insert(int data,struct Node* root)
 {
@@ -64,8 +98,10 @@ void main()
     p2->right=p3;
 
     inorder(ROOT);
-    printf("\n");
-    insert(9,ROOT);
+   ROOT= delete(ROOT,1);
+    printf("\n");                                                                                 
     inorder(ROOT);
+    // printf("%d node is ",getnode(ROOT,1)->data);
+
 
 }

@@ -1,15 +1,17 @@
-const divs=document.querySelectorAll("div");
-// console.log(divs);
-divs.forEach((div)=>
+const tabs=document.querySelectorAll('[data-tab-target]'); //individual li elements 
+const tabcontents=document.querySelectorAll('[data-tab-content]'); // div contents 
+tabs.forEach((tab)=>
 {
-    div.addEventListener("click",function(event)
+    tab.addEventListener("click",(e)=>
     {
-        console.log(div.classList.value);
-        event.stopPropagation();
+        tabs.forEach((tab)=>{tab.classList.remove("active")});
+        tab.classList.add("active");
 
-    },
-    {
-        // capture:true,
+        const target=document.querySelector(tab.dataset.tabTarget);
+        tabcontents.forEach((content)=> {content.classList.remove("active")});
+        target.classList.add("active");
     });
 
 });
+const hometab=document.querySelector("#home");
+hometab.classList.add("active");

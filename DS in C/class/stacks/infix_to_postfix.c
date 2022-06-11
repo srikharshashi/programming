@@ -103,8 +103,7 @@ void main()
             }
             else
             {
-                char stacktop = STACK->TOP->data;
-                while (STACK->TOP != NULL && checkprecedence(stacktop) >= checkprecedence(str[c]))
+                while (STACK->TOP != NULL && checkprecedence(STACK->TOP->data) >= checkprecedence(str[c]))
                 {
 
                     printf("%c", pop(STACK));

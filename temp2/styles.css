@@ -1,0 +1,51 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body
+{
+    width: 100%;
+    height: 100%;
+}
+.content
+{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 100%;   
+    position: relative;
+}
+
+.img
+{
+    /* border: 2px solid rgb(75, 18, 209); */
+    width: 100%;
+    height: 50%;
+    position: absolute;
+}
+img
+{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    filter:brightness(50%);
+}
+.title
+{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    color: white;
+    font-size: 50px;
+}
+.menu
+{
+    border: 2px solid white;
+    position: absolute;
+    top:50%;
+    height: 50%;
+    border: 0;
+    width: 100%;
+    background: black;
+}

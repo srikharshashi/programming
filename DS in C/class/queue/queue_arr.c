@@ -42,7 +42,7 @@ int enqueue(struct Queue* queue,int data)
         {
         queue->rear++;
         queue->arr[queue->rear]=data;
-        queue->size++;
+        queue->size++;  
         return 1;
 
         }
@@ -76,12 +76,14 @@ void display(struct Queue* queue)
     }
     printf("\n");
 }
+
 void main()
 {
     struct Queue* QUEUE=(struct Queue*)(malloc(sizeof(struct Queue)));
     QUEUE->front=-1;
     QUEUE->rear=-1;
     QUEUE->arr=NULL;
+
     printf("enter size of stack\n");
     scanf("%d",&QUEUE->size);
 
